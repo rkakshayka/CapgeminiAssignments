@@ -17,7 +17,6 @@ db.users.insert([
 	}
 ])
 
-
 Insert the following documents into a posts collection
 
 db.posts.insert([

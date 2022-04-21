@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">   
+
+<!-- Question 1-->
+    <bean id="Customer" class="com.SpringCore_Question1.Customer">
+         <constructor-arg index="0" type="int" value="11814168"/>
+         <constructor-arg index="1" value="Akshay"/>
+         <constructor-arg index="2" type="long" value="902729000"/>
+         <constructor-arg index="3" ref="Address"/>
+    </bean>
+    <bean id="Address" class="com.SpringCore_Question1.Address">
+        <constructor-arg index="0" value="India"/>
+        <constructor-arg index="1" value="Hapur"/>
+        <constructor-arg index="2" value="Uttar Pradesh"/>
+        <constructor-arg index="3" type="int" value="245101"/>
+        <constructor-arg index="4" value="6"/>
+    </bean>
+
+<!-- Question 2-->
+ <bean id="questions" class="com.SpringCore_Question2.SpringCore_Q2">
+    <property name="questionId" value="1"></property>
+    <property name="question" value="My Favourite fruits"></property>
+    <property name="l">
+    	<list>
+    		<ref bean="l1"/>
+    		<ref bean="l2"/>
+    		<ref bean="l3"/>
+    	</list>
+    </property>
+    
+    <property name="s">
+    	<set>
+    		<ref bean="s1"/>
+    		<ref bean="s2"/>
+    		<ref bean="s3"/>
+    	</set>
+    </property>
+    
+    <property name="m">
+            <map>
+                <entry key="1" value="Mango" />
+                <entry key="2" value="Litchi" />
+                <entry key="3" value="Papaya" />
+                <entry key="4" value="Grapes" />
+            </map>
+      </property>
+    </bean>
+    <bean id="l1" class="com.SpringCore_Question2.ListAnswers">
+    	<property name="listAnswers" value="Apple"></property>
+    </bean>
+    <bean id="l2" class="com.SpringCore_Question2.ListAnswers">
+    	<property name="listAnswers" value="Mango"></property>
+    </bean>
+    <bean id="l3" class="com.SpringCore_Question2.ListAnswers">
+    	<property name="listAnswers" value="Litchi"></property>
+    </bean>
+    <bean id="s1" class="com.SpringCore_Question2.SetAnswers">
+    	<property name="setAnswers" value="Peach"></property>
+    </bean>
+    <bean id="s2" class="com.SpringCore_Question2.SetAnswers">
+    	<property name="setAnswers" value="Papaya"></property>
+    </bean>
+    <bean id="s3" class="com.SpringCore_Question2.SetAnswers">
+    	<property name="setAnswers" value="Banana"></property>
+    </bean>
+<!-- Question 7 -->
+<bean xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">         
+    
+       <context:component-scan base-package="com.SpringCore_Question7" />
+</bean>
+<bean id="number" class="com.SpringCore_Question7.SpringCore_Q7.Number"> </bean>
+
+
+</beans>
+
+
+ 

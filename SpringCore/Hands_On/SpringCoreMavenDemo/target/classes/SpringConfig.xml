@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "helloworld" class = "in.SpringMavenClass.HelloWorld">
+      <property name = "message" value = "Hello World!"/>
+   </bean>
+
+    <bean id = "TRIANGLE" class = "in.SpringMaven.javabrains.Triangle">
+      <property name = "type" value = "Equilateral_"/>
+   </bean>
+<!-- 
+type = int, java.lang.String
+-->
+   <bean id = "TRIANGLE2" class = "in.SpringMaven.ConstructorInjection.Triangle">
+      <!-- <constructor-arg type = int value = "Equilateral_"/>  -->
+      <constructor-arg index="0" value = "Equilateral_"/>
+      <constructor-arg index="1" value = "36"/>
+   </bean>
+
+<!--Injecting Objects -->
+   <bean id = "TRIANGLE3" class = "in.SpringMaven.InjectingObjects.Triangle">
+      <property name="pointA" ref="Point1" />
+      <property name="pointB" ref="Point2" />
+      <property name="pointC" ref="Point3" />
+   </bean>
+
+   <bean id = "Point1" class = "in.SpringMaven.InjectingObjects.PointObject">
+        <property name="x" value="0" />
+        <property name="y" value="0" />
+   </bean>
+
+   <bean id = "Point2" class = "in.SpringMaven.InjectingObjects.PointObject">
+        <property name="x" value="-20" />
+        <property name="y" value="0" />
+   </bean>
+
+   <bean id = "Point3" class = "in.SpringMaven.InjectingObjects.PointObject">
+        <property name="x" value="20" />
+        <property name="y" value="0" />
+   </bean>
+</beans>

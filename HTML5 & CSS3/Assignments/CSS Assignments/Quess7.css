@@ -1,0 +1,15 @@
+body{
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+}
+p{
+    background-color: beige;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    padding-right: 20px;
+    display: inline-block;
+    border: 1px solid red;
+    outline: dashed greenyellow;
+}

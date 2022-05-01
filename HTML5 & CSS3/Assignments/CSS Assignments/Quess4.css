@@ -1,0 +1,16 @@
+body{
+    border: 2px solid black;
+    width: 100%;
+    background-color: #d0ebf5;
+}
+a{
+    color: red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+a:visited{
+    color: red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

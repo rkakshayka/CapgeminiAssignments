@@ -1,0 +1,33 @@
+body{
+    border: 1px solid black;
+    padding-left: 2px;
+    padding-right: 2px; 
+}
+
+p.x{
+    background-color: aquamarine;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    border: 8px solid black;
+    margin-top: 0px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+p.y{
+    background-color: aquamarine;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    border: 4px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+p.z{
+    background-color: aquamarine;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    border: 2px solid black;
+    margin-left: 6px;
+    margin-right: 6px;
+}

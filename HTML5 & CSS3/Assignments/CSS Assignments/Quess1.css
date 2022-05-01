@@ -1,0 +1,16 @@
+body h1{
+    background-color: rgb(151, 185, 247);
+    padding: 20px 0px;
+    top: 0;
+    left: 0;
+}
+div{
+    background-color: rgb(182, 194, 230);
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+}
+div p{
+    background-color: aquamarine;
+    padding: 20px 0px;
+}

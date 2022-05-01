@@ -1,0 +1,8 @@
+table, th, td {
+    border: 1px solid yellowgreen;
+  }
+
+table th{
+    background-color: rgb(25, 160, 25);
+    color: white;
+}

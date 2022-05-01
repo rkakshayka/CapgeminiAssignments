@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(236, 18, 218);
+}
+
+.container{
+    background-color: rgb(202, 145, 22);
+    width: 30%;
+    margin: 50px auto;
+    padding: 10px 30px 30px 25px;
+}
+
+h2{
+    color: rgb(27, 26, 26);
+}
+
+label{
+    font-size: large;
+}
+
+input[type=text], input[type=number]{
+    height: 40px;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    display: inline;
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: rgb(17, 18, 19);
+    border-radius: 4px;
+    height: 25px;
+    padding: auto;
+    color: rgb(232, 255, 250);
+}
+
+input[type=text]:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:focus{
+    border: 3px dashed cornflowerblue;
+    outline: none;
+}

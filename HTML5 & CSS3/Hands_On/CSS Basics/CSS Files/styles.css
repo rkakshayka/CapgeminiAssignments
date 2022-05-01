@@ -1,0 +1,30 @@
+h1{
+    color: orange;
+    background-color: rgb(153, 125, 139);
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: arial;
+    text-align: center;
+}
+p{
+    color: rgb(117, 50, 50);
+    text-align: right;
+    line-height: 30px;
+    letter-spacing: 3px;
+    column-count: 2;
+    column-gap: 60px;
+}
+
+ol{
+    /* border: 4px solid crimson; */
+    border-bottom: 4px dotted crimson;
+    border-left: 8px dotted crimson;
+}
+li{
+    /* color: strong green; */
+    list-style-type: decimal;
+    /* text-shadow: horizontal vertical lightgray; */
+    
+    text-shadow: 2px 2px #694f4f;
+
+} 

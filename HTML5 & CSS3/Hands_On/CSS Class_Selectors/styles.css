@@ -1,0 +1,83 @@
+/* p{
+    color:lightslategrey;
+} */
+
+/* It will select all error class in an html  */
+/* .error{
+    color:red;
+} */
+
+
+/* It will select only paragraph of class error type only */
+/* p.error{
+    color: red;
+}
+p.success{
+    color: green;
+}
+p.classA.classB{
+    border: 3px ridge #32cd32;
+} */
+
+
+/* To work with id use #*/
+/* syntax- tagname#idname{ } */
+/* #content{
+    background-color: mistyrose;
+    padding: 20px;
+} */
+
+
+/* div.error will work with this only
+ <div class="error">I am an error</div> 
+----
+div.error{
+    color: yellow
+} */
+
+/* it will go 
+<div><p class="error"></p></div>
+*/
+/* div .error{
+    color: rgb(194, 13, 13);
+} */
+
+/* To change anchor tags  */
+ /* text-deco it will remove underline */
+/* a[href="https://www.google.com/"]{
+    background-color: black;
+    color:white;
+    text-decoration: none;   
+    font-weight: bold;
+    text-transform: uppercase; 
+} *
+/
+/*  href*= means any anchor contains facebook */
+/* a[href*="facebook"]{
+    color: white;
+    background:  red;
+    border: 2px solid blue;
+} */
+
+/* href$= means ending with */
+/* a[href$=".com"]{
+    color: white;
+    background:  red;
+    border: 2px solid blue;
+} */
+
+/* Override inheritance */
+div {
+    color:lightcoral;
+    border: 1px solid grey;
+    margin: 40px;
+    font-weight: bold;
+}
+div p{
+    border: inherit;
+    margin: inherit;
+    color: crimson;
+}
+p{
+    color: orange;
+}

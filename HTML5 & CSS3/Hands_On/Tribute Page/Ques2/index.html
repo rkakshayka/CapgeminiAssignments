@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Ques2/style.css">
+    </head>
+    <body>
+        <div class="container">
+        <form>
+            <h2>Fill the form to Register</h2>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" placeholder="Enter your email" required><br><br>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter a Username" required><br><br>
+            <label for="password">Password</label><br>
+            <input type="text" id="password" placeholder="Enter a password" required><br><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="number" id="phone" placeholder="Enter your number" minlength="10" maxlength="10" required><br><br>
+            <label for="city">City</label>
+            <select id="city">
+                <option value="" selected disabled hidden>Choose</option>
+                <option>Vancouver</option>
+                <option>New York</option>
+                <option>London</option>
+                <option>Toronto</option>
+                <option>Barcelona</option>
+            </select><br><br>
+            <input type="checkbox" value="english" id="english"><label for="english">English</label>
+            <input type="checkbox" value="arabic" id="arabic"><label for="arabic">Arabic</label>
+            <input type="checkbox" value="french" id="french"><label for="french">French</label>
+            <br><br>
+            <input type="submit" >
+        </form>
+        </div>
+    </body>
+</html>

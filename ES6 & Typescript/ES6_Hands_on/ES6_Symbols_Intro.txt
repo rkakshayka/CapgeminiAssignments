@@ -1,0 +1,38 @@
+______________________
+>SYMBOL Introduction
+**********************
+Javascript comprised six datatypes undefined, null, boolean, String, Number and Object.
+The Symbol is newly introduced datatype in ES6 which makes the total number of data types in JavaScript is 7. 
+   *It is a primitive datatype which means Symbol cannot be instantiated. 
+   *Symbols are immutable datatype and act as unique identifiers for object keys. 
+   *Unique object keys can be generated using Symbol() function.
+   *The Symbol() function returns a value of type symbol.
+
+    >SYNTAX : let symbol = Symbol();
+
+Before the introduction of Symbol, it was very difficult to generate unique object keys. 
+It was important to maintain unique object keys to prevent the overwriting of values having similar object key as 
+this could result in loss of data. The introduction of Symbol helped overcome this problem as unique keys could be
+generated without writing a complicated piece of code. 
+_________________________________
+>SYMBOL: Property & Description
+*********************************
+1.Symbol.for()
+This function creates a symbol and adds to registry. If the symbol is already present in the registry it will return
+ the same; else a new symbol is created in the global symbol registry.
+
+   >SYNTAX: Symbol.for(key);   where, key is the identifier of the symbol.
+
+2.Symbol.keyFor()
+This method retrieves a shared symbol key from the global symbol registry for the given symbol.
+   
+   >SYNTAX: Symbol.keyFor(sym);   where, sym is the symbol to find a key for.
+
+_________________________________________
+>Comparison:Symbol and without Symbol:
+*****************************************
+Let us consider an example where a list of marks obtained by students in a particular exam needs to be maintained. 
+The students are yet to be assigned their roll numbers. In this situation, the name of a student is to be used as
+an object key. However, there can be more than one student with similar names. This can cause overwriting of marks
+obtained by each student resulting in data loss. To overcome this problem symbol datatype can be used.
+

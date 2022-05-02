@@ -1,0 +1,14 @@
+var mySet = new Set();
+var ob1 = {};
+var ob2 = {};
+mySet.add("Hello");
+mySet.add(1);
+mySet.add(ob1);
+mySet.add(ob2);
+console.log(mySet.size);
+var newSet = new Set([1, 2, 3, 4, 4, 4]);
+console.log(newSet.size);
+var chainSet = new Set().add("hello").add("world");
+console.log(chainSet.size);
+console.log(newSet["delete"](1));
+console.log(newSet.size);
